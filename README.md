@@ -28,18 +28,25 @@ O **Gradient Boosting** prevê a venda diária de cada loja com erro médio de *
 | Arquivo | O que é |
 |---|---|
 | `Projeto_ML_Rossmann.ipynb` | Notebook completo, executado do início ao fim, com as explicações em células de texto |
-| `train.csv` | Vendas diárias por loja (1.017.209 linhas, 2013 a 2015), arquivo original do Kaggle |
-| `store.csv` | Cadastro das 1.115 lojas, arquivo original do Kaggle |
-| `Relatorio_Rossmann.docx` | Relatório no modelo ABNT, com os mesmos números do notebook |
+| `dados/train.csv` | Vendas diárias por loja (1.017.209 linhas, 2013 a 2015), arquivo original do Kaggle |
+| `dados/store.csv` | Cadastro das 1.115 lojas, arquivo original do Kaggle |
+| `dados/dados_rossmann.zip` | Os mesmos dois CSVs compactados, para baixar mais rápido |
+| `docs/Relatorio_Rossmann.docx` | Relatório no modelo ABNT, com os mesmos números do notebook |
+| `docs/Apresentação Projeto ML 2 - Rossmann.pptx-2.pdf` | Slides da apresentação |
 
 ---
 
 ## Como reproduzir
 
-1. Abra o notebook no Google Colab (botão no topo desta página).
-2. Faça o upload de `train.csv` e `store.csv` na pasta do Colab (`/content`).
-3. Execute todas as células (**Ambiente de execução → Executar tudo**).
-4. Se a primeira célula pedir, reinicie a sessão e execute tudo de novo. Ela instala as versões das bibliotecas usadas no projeto.
+**No Google Colab**
+1. Abra o notebook pelo botão no topo desta página.
+2. Baixe `train.csv` e `store.csv` da pasta `dados/` deste repositório (ou o `dados_rossmann.zip`, descompactado).
+3. Faça o upload dos dois arquivos na pasta do Colab (`/content`).
+4. Execute todas as células (**Ambiente de execução → Executar tudo**).
+5. Se a primeira célula pedir, reinicie a sessão e execute tudo de novo. Ela instala as versões das bibliotecas usadas no projeto.
+
+**No computador**
+Clone o repositório e abra o notebook na raiz. Ele encontra os CSVs sozinho na pasta `dados/`.
 
 A execução completa leva de **25 a 30 minutos**, quase todo esse tempo na busca de hiperparâmetros.
 
